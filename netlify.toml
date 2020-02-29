@@ -1,3 +1,9 @@
-[build]
-  publish = "public"
-  command = ""
+[[redirects]]
+  from = "/*"
+  to = "https://eastleigh-groupthink-app.herokuapp.com/:splat"
+  status = 200
+  force = true
+  [redirects.headers]
+      X-From = "Netlify"
+      X-Forwarded-Host = "groupthink.openeastleigh.uk"
+      X-Forwarded-Proto = "https"
